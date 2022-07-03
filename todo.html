@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="style/todo.css" />
+  <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script defer src="./todo.js"></script>
+  <script defer src="./submitTodo.js"></script>
+  <script defer src="./getalltask.js"></script>
+</head>
+
+<body>
+  <div id="myDIV" class="header">
+    <h2 style="margin: 5px">My To Do List</h2>
+    <input type="text" id="myInput" placeholder="Title..." />
+    <span onclick="newElement()" class="addBtn">Add</span>
+  </div>
+
+  <div>
+    <button id="btn">Submit Todo</button>
+    <button id="btn2" onclick="window.location.href='index.html'">Logout <button>
+
+  </div>
+
+  <ul id="myUL">
+
+  </ul>
+  
+  <div>
+    <button id="btn1">Get All Task</button>
+  </div>
+
+  <ul id="myUL1">
+
+  </ul>
+
+</body>
+
+</html>

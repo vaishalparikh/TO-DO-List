@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup Page</title>
+    <link rel="icon" href="images/logo.png" />
+    <link rel="stylesheet" href="style/signup.css" />
+    <script defer src="signup.js"></script>
+  </head>
+
+  <body>
+    <div class="card">
+      <h1 class="title">Signup Page</h1>
+      <p class="pre-title">Sign up and List of task you need to complete!.</p>
+      <div class="line"></div>
+      <form>
+        <div class="name">
+          <p class="fn">Full Name</p>
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter your Name"
+            required
+            autofocus
+          />
+        </div>
+        <div class="age">
+          <p class="fn">Age</p>
+          <input
+            type="number"
+            id="age"
+            placeholder="Enter your age"
+            required
+            autofocus
+          />
+        </div>
+        <div class="email">
+          <p>Email Address</p>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div class="pass">
+          <p>Password</p>
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter your password"
+            pattern=".{0,8}"
+            autocomplete="on"
+            required
+          />
+        </div>
+        <div>
+          <button id="submit">Signup Now.</button>
+        </div>
+      </form>
+      <div class="sign">
+        <p>
+          Already signed up? <a href="index.html"><span>Log in now</span></a>
+        </p>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

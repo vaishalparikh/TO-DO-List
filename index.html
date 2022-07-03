@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style/login.css" />
+    <script defer src="./login.js"></script>
+  </head>
+
+  <body>
+    <div class="card">
+      <h1 class="title">Login Page</h1>
+      <p class="pre-title">If you already has an account, just sign in.</p>
+      <div class="line"></div>
+      <form>
+        <div class="email">
+          <p>Email Address</p>
+          <input
+            type="email"
+            placeholder="Enter your email"
+            required
+            autofocus
+            id="email"
+          />
+        </div>
+        <div class="pass">
+          <p>Password</p>
+          <input
+            type="password"
+            placeholder="Enter your password"
+            pattern=".{0,8}"
+            required
+            id="password"
+          />
+        </div>
+        <button class="btn1" id="btn">Login Now</button>
+      </form>
+      <div class="sign">
+        <p>
+          No account? <a href="signup.html"><span>Sign up now</span></a>
+        </p>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html> 

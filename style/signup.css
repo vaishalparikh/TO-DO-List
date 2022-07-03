@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+}
+
+.card>* {
+    margin-left: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.title {
+    margin-left: 0;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.pre-title {
+    text-align: center;
+    margin: 0 10px;
+}
+
+.line {
+    border: 0.1px solid grey;
+    background-color: grey;
+    margin-top: 5px;
+    display: flex;
+    margin-left: 0;
+    justify-content: center;
+}
+
+.name>div>input {
+    width: 150px;
+    height: 30px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border-color: black;
+}
+
+.email,
+.pass,
+.name,
+.age,
+.image {
+    margin-top: 5px;
+}
+
+.age>input,
+button {
+    width: 150px;
+    height: 30px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border-color: black;
+    width: 150px;
+}
+
+.email>input,
+.pass>input,
+.name>input,
+button {
+    width: 90%;
+    height: 30px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border-color: black;
+    width: 95%;
+}
+
+button {
+    width: 95%;
+    height: 40px;
+    margin-top: 10px;
+    background-color: black;
+    border: transparent;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 1s;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: cornflowerblue;
+}
+
+.image>input {
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.btn,
+.sign {
+    margin-top: 10px;
+}
+
+.last {
+    margin-left: 20px;
+    padding-right: 20px;
+}
+
+.sign {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+span {
+    color: grey;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+span:hover {
+    color: cornflowerblue;
+    text-decoration-line: underline;
+}
+
+input::placeholder {
+    font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width: 380px) and (min-width: 50px) {
+
+    .title {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .name {
+        flex-direction: column;
+    }
+
+    .last {
+        margin-left: 0;
+        padding: 0;
+        margin-top: 5px;
+    }
+
+    .name>div>input {
+        width: 95%;
+    }
+
+}

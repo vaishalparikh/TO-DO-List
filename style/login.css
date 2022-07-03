@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+}
+
+.card>* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.card>div,
+.card>form>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.card>* {
+    margin-left: 5.5%;
+}
+
+
+.title {
+    padding: 15px 20px;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.pre-title {
+    text-align: center;
+    margin: 0 10px;
+}
+
+.line {
+    border: 0.1px solid grey;
+    background-color: grey;
+    margin-top: 5px;
+    display: flex;
+    margin-left: 0;
+    justify-content: center;
+}
+
+.email {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.pass {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.email>input,
+.pass>input,
+button {
+    padding: 0 5px;
+    border-radius: 5px;
+    border-color: black;
+}
+
+
+.email>input,
+.pass>input {
+    width: 90%;
+    height: 30px;
+    margin-top: 5px;
+}
+
+.btn1 {
+    width: 95%;
+    height: 40px;
+    margin-top: 10px;
+    background-color: black;
+    border: transparent;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 1s;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: cornflowerblue;
+}
+
+
+.btn,
+.sign {
+    margin-top: 10px;
+}
+
+.sign {
+    padding-bottom: 15px;
+}
+
+.sign>p {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+span {
+    color: grey;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+span:hover {
+    color: cornflowerblue;
+    text-decoration-line: underline;
+}
+
+input::placeholder {
+    font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width: 380px) and (min-width: 50px) {
+    .card {
+        width: 85%;
+    }
+
+    .card>* {
+        margin-left: 5%;
+    }
+
+    .line {
+        margin-left: 0;
+    }
+}
